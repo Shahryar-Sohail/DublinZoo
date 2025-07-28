@@ -1,0 +1,96 @@
+import React from 'react'
+import { motion } from "motion/react"
+import logo from '../assets/logo.png'
+
+const Navbar = () => {
+    return (
+
+        <div>
+            <p className='text-md text-white p-5 bg-red-600'>Please Note: The South American House is temporarily closed due to maintenance works. Visitors will not be able to access this habitat. We apologise for any inconvenience caused. To ensure a safe and enjoyable visit for all visitors, scooters are not permitted inside Dublin Zoo. Thank you for your understanding and cooperation. <span><a href='' className='italic'>Find out more</a></span></p>
+
+            <div className="navbar bg-black/20 relative z-10 shadow-sm text-white text-xs py-0  ">
+                <div className="navbar-start">
+                    <div className="dropdown">
+                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                        </div>
+                        <ul
+                            tabIndex={0}
+                            className="menu menu-sm dropdown-content bg-white text-black rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a>WildLight</a></li>
+                            <li><a>Private Events</a></li>
+                            <li><a>Conversations</a></li>
+                            <li><a>Gift Shop</a></li>
+                            <li><a>Zoo News</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
+                </div>
+
+                <div className="navbar-center hidden lg:flex">
+                    <ul className="menu menu-horizontal px-1">
+                        <li><a>WildLight</a></li>
+                        <li><a>Private Events</a></li>
+                        <li><a>Conversations</a></li>
+                        <li><a>Gift Shop</a></li>
+                        <li><a>Zoo News</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+            <div className="navbar bg-black/20 relative z-10 shadow-sm text-white text-xs py-0 ">
+                <div className="navbar-start mx-10 hidden lg:flex">
+                    <img src={logo} className="w-40 h-14 object-contain " />
+                </div>
+                <div className="navbar-end">
+                    <div className="dropdown">
+                        <div tabIndex={0} role="button" className="btn btn-ghost  lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                        </div>
+                        <ul
+                            tabIndex={0}
+                            className="menu menu-sm  bg-white text-black dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a>Your Visit</a></li>
+                            <li><a>Conservation</a></li>
+                            <li>
+                                <a>Support</a>
+                                <ul className="p-2">
+                                    <li><a>What U can do</a></li>
+                                    <li><a>Partnership</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
+                </div>
+                <div className="navbar-center hidden lg:flex mx-24">
+
+                    <ul className="menu menu-horizontal px-1">
+                        <li><a>Your Visit</a></li>
+                        <li><a>Conservation</a></li>
+                        <li>
+                            <details>
+                                <summary>Support</summary>
+                                <ul className="p-2 bg-white text-black rounded-lg px-2 py-1">
+                                    <li><a>What u can do</a></li>
+                                    <li><a>Partnership</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    )
+}
+
+export default Navbar
