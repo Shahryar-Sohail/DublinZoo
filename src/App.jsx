@@ -10,7 +10,7 @@ import Section4 from './pages/Section4'
 import Section5 from './pages/Section5'
 import Section6 from './pages/Section6'
 import Section7 from './pages/Section7'
-import Footer from './pages/Footer'
+import Footer from './components/Footer'
 
 
 function App() {
